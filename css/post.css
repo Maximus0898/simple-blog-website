@@ -1,0 +1,123 @@
+.post {
+  margin: 8rem 2rem;
+}
+
+.post-photo img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+
+.post-title {
+  font-size: 3rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.author-wrap {
+  border: 1px solid #eee;
+  width: 45%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+#avatar {
+  width: 100px;
+  height: 100px;
+  background-image: url(/img/jason.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.author-bio p {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.author-fn p {
+  margin-left: 2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.share-post {
+  margin: 2rem 0;
+}
+
+.share-title {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.share-list {
+  list-style: none;
+}
+
+.share-list li {
+  display: inline-block;
+  padding: 1rem;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+
+.share-list .fab {
+  font-size: 1.6rem;
+}
+
+.post-content {
+  padding: 4rem;
+  margin: 4rem;
+  font-size: 1.7rem;
+  line-height: 1.8;
+}
+
+.post-content h3 {
+  font-size: 2.2rem;
+}
+
+.post-content ul {
+  margin: 2rem 3rem;
+}
+
+@media (max-width: 1800px) {
+  .post-card {
+    width: 30%;
+    min-height: 30rem;
+    height: 2rem;
+    margin: 2rem;
+  }
+
+  .post-card .blog-base {
+    height: 20rem;
+  }
+
+  .post-card .blog-headline {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .author-wrap {
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .author-wrap {
+    width: 100%;
+    flex-direction: column;
+  }
+  .post-content {
+    margin: 1.5rem;
+    padding: 2rem;
+    text-align: justify;
+  }
+
+  .post-card {
+    width: 90%;
+  }
+}

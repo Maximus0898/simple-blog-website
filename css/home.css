@@ -1,0 +1,165 @@
+.section-home {
+  grid-area: hm;
+  background-image: linear-gradient(
+      105deg,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0.8) 50%,
+      transparent 50%
+    ),
+    url(/img/altumcode.jpg);
+  background-size: cover;
+  height: 52rem;
+
+  width: auto;
+  background-repeat: no-repeat;
+  color: #8f4d03;
+}
+
+#form {
+  width: 50%;
+  padding: 5rem;
+  margin-top: 2rem;
+  margin-right: 50%;
+}
+
+#form h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+#form h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+#form p {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.form-group {
+  margin-top: 1.5rem;
+}
+
+.form-group:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.form-label {
+  display: block;
+  font-weight: 700;
+  font-size: 1.8em;
+  margin-bottom: 0.8rem;
+  transition: all 0.3s;
+}
+
+.form-input {
+  display: block;
+  font-family: inherit;
+  padding: 1.5rem 2rem;
+  width: 80%;
+  display: block;
+  border: none;
+  border-bottom: 3px solid transparent;
+  font-size: 1.6rem;
+  transition: border 0.3s;
+  border-radius: 2px;
+}
+
+.form-input:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.form-input:focus {
+  outline: none;
+  border-bottom: 3px solid #77d466;
+  box-shadow: 0 1rem 3rem rgba(#000, 1);
+}
+
+.form-input:focus:invalid {
+  border-bottom: 3px solid #cc3701;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 3rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn-green {
+  background-color: #59a80a;
+  color: #fff;
+  font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+  .section-home {
+    background-image: linear-gradient(
+        105deg,
+        rgba(255, 255, 255, 0.8) 0%,
+        rgba(255, 255, 255, 0.8) 60%,
+        transparent 65%
+      ),
+      url(../img/altumcode.jpg);
+    background-size: cover;
+  }
+
+  #form {
+    width: 60%;
+  }
+}
+
+@media (max-width: 900px) {
+  .section-home {
+    background-image: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.6) 0%,
+        rgba(255, 255, 255, 0.6) 50%,
+        transparent 50%
+      ),
+      url(/img/altumcode.jpg);
+    display: flex;
+    margin-top: 4rem;
+  }
+
+  #form {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .form-input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-home {
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.6) 0%,
+        rgba(255, 255, 255, 0.6) 100%
+      ),
+      url(/img/altumcode.jpg);
+  }
+
+  #form {
+    width: 100%;
+  }
+  .form-input {
+    width: 100%;
+  }
+}

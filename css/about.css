@@ -1,0 +1,100 @@
+.section-about {
+  grid-area: ab;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  padding: 1.5rem 0;
+  background-color: #ddd;
+}
+
+.about-text {
+  background-color: #a097af;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  border-radius: 10rem;
+  color: #fff;
+}
+
+.about-text blockquote p {
+  font-size: 1.6rem;
+  padding: 1.5rem;
+  background: #eee;
+  border-radius: 5px;
+  margin: 4rem 0;
+  color: #000;
+}
+
+.about-text blockquote footer {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.heading-pm {
+  font-size: 3rem;
+}
+
+.about-img {
+  background-color: #f08080;
+  border-radius: 10rem;
+  align-self: center;
+  padding: 5rem 3rem;
+}
+
+.img-wp img {
+  width: 85%;
+  padding: 1.5rem 2rem;
+}
+
+.about-social {
+  margin: 4rem 0;
+}
+.about-social a {
+  display: inline-block;
+  margin-left: 2rem;
+}
+.about-icon {
+  font-size: 3rem;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .about-text {
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+    border-radius: 5rem;
+  }
+
+  .about-text blockquote p {
+    margin: 2rem 0;
+  }
+
+  .about-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5rem;
+  }
+
+  .img-wp img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-about {
+    grid-template-columns: 1fr;
+  }
+
+  .about-img {
+    padding: 0;
+  }
+  .about-text blockquote p {
+    text-align: justify;
+  }
+
+  .about-social {
+    margin: 0.5rem 0;
+  }
+}

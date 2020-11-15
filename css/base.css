@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #000;
+  font-weight: 300;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(3, min-content) 1fr min-content;
+  grid-template-areas:
+    'hd hd hd hd hd hd hd hd'
+    'hm hm hm hm hm hm hm hm'
+    'blog blog blog blog blog blog blog blog'
+    'ab ab ab ab ab ab ab ab'
+    'ft ft ft ft ft ft ft ft';
+}

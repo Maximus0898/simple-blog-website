@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css"
+      integrity="sha512-ioRJH7yXnyX+7fXTQEKPULWkMn3CqMcapK0NNtCN8q//sW7ZeVFcbMJ9RvX99TwDg6P8rAH2IqUSt2TLab4Xmw=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Home</title>
+  </head>
+  <body class="container">
+    <header class="header">
+      <nav class="navbar">
+        <span class="nav__toggler" id="toggler">
+          <i id="icon" class="fas fa-bars"></i>
+        </span>
+        <a href="#" class="nav-brand">BlogX</a>
+
+        <ul class="nav__list" id="nav">
+          <li class="nav__item">
+            <a href="#home" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#blog" class="nav__link">Blog</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="section-home" id="home">
+      <form id="form">
+        <h1>Welcome to <strong>BlogX</strong>!</h1>
+        <h2>Top Tech Blog of the World</h2>
+        <p>Subscribe to our <em>weekly</em> newsletter!</p>
+
+        <div class="form-group">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-input" id="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-input" id="email" required />
+        </div>
+        <div class="form-group">
+          <button class="btn btn-green">
+            Subscribe
+            <i class="far fa-envelope"></i>
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <section class="section-blog" id="blog">
+      <div class="heading-blog">
+        <h2 class="heading-pm-b">Latest Blogs</h2>
+        <p>
+          Read our latest blogs on Web Development and Frontend Technologies
+        </p>
+      </div>
+
+      <div class="blog-card card-1">
+        <article class="blog-base">
+          <div class="blog-img-cover">
+            <a href="blog.html" class="blog-link">
+              <figure class="blog-figure">
+                <img src="img/react.png" alt="Blog Image" class="blog-image" />
+              </figure>
+            </a>
+          </div>
+          <div class="blog-text-cover">
+            <a href="blog.html" class="blog-link">
+              <h2 class="blog-headline">Getting Started with ReactJs</h2>
+            </a>
+            <div class="blog-author-card">
+              <div class="author-card-holder">
+                <i class="fas fa-user"></i>
+                <span class="author-name">Jason Bourne</span>
+                <span class="pub-date">Oct 18, 2020</span>
+              </div>
+            </div>
+          </div>
+          <div class="blog-subhead">
+            <a href="blog.html" class="blog-link">
+              <p class="blog-subhead-text">It is not hard as you think</p>
+            </a>
+            <div class="blog-tags">
+              <a href="#" class="tag">Reactjs</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="blog-card card-2">
+        <article class="blog-base">
+          <div class="blog-img-cover">
+            <a href="blog.html" class="blog-link">
+              <figure class="blog-figure">
+                <img
+                  src="img/webpack.jpg"
+                  alt="Blog Image"
+                  class="blog-image"
+                />
+              </figure>
+            </a>
+          </div>
+          <div class="blog-text-cover">
+            <a href="blog.html" class="blog-link">
+              <h2 class="blog-headline">Introduction to Webpack</h2>
+            </a>
+            <div class="blog-author-card">
+              <div class="author-card-holder">
+                <i class="fas fa-user"></i>
+                <span class="author-name">James Roy</span>
+                <span class="pub-date">Oct 17, 2020</span>
+              </div>
+            </div>
+          </div>
+          <div class="blog-subhead">
+            <a href="blog.html" class="blog-link">
+              <p class="blog-subhead-text">
+                Making your development effiecient
+              </p>
+            </a>
+            <div class="blog-tags">
+              <a href="#" class="tag">Webpack</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="blog-card card-3">
+        <article class="blog-base">
+          <div class="blog-img-cover">
+            <a href="blog.html" class="blog-link">
+              <figure class="blog-figure">
+                <img src="img/versus.jpg" alt="Blog Image" class="blog-image" />
+              </figure>
+            </a>
+          </div>
+          <div class="blog-text-cover">
+            <a href="blog.html" class="blog-link">
+              <h2 class="blog-headline">Vue vs React vs Angular</h2>
+            </a>
+            <div class="blog-author-card">
+              <div class="author-card-holder">
+                <i class="fas fa-user"></i>
+                <span class="author-name">Chris Stevenson</span>
+                <span class="pub-date">Oct 15, 2020</span>
+              </div>
+            </div>
+          </div>
+          <div class="blog-subhead">
+            <a href="blog.html" class="blog-link">
+              <p class="blog-subhead-text">Let the battle begin!!!</p>
+            </a>
+            <div class="blog-tags">
+              <a href="#" class="tag">Reactjs</a>
+              <a href="#" class="tag">Vue</a>
+              <a href="#" class="tag">Angular</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="button-wrap">
+        <a class="btn btn-blog" href="#">More articles</a>
+      </div>
+    </section>
+    <section class="section-about" id="about">
+      <div class="about-text">
+        <h2 class="heading-pm">About BlogX</h2>
+        <blockquote>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eius
+            quae ab dolor vel quam deserunt vitae ullam tempora! Ut quisquam
+            recusandae porro eos, natus velit est quia culpa atque vel cumque?
+            Doloribus nisi et nihil, fugiat id numquam culpa. Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Expedita ab quia animi odio
+            dicta assumenda minima est, ipsum repellat odit nobis et sit amet.
+            Placeat, inventore blanditiis ratione iusto.
+          </p>
+          <footer>&mdash; Sarvar, <cite>Creator of BlogX</cite></footer>
+        </blockquote>
+
+        <div class="about-social">
+          <a href="#" class="about-icon"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="about-icon"
+            ><i class="fab fa-stack-overflow"></i
+          ></a>
+          <a href="#" class="about-icon"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="about-img">
+        <figure class="img-wp">
+          <img src="img/web_developer.png" alt="Blogging" />
+        </figure>
+      </div>
+    </section>
+    <footer class="footer">
+      <p class="footer__title">BlogX</p>
+      <div class="footer__social">
+        <a href="#" class="footer__icon"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="footer__icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="footer__icon"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p>&copy; 2020 Copyright. All Rights Reserved.</p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
